@@ -23,7 +23,7 @@ RUN npm prune --production
 RUN rm -rf Dockerfile src tsconfig.json package.json package-lock.json
 
 # Expose port 3000 to receive incoming requests
-EXPOSE 3000
+EXPOSE 8080
 
 # Set the command to start the server
 CMD [ "node", "dist/index.js" ]
